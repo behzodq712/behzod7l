@@ -1,128 +1,134 @@
 <!DOCTYPE html>
-<html lang="uz">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art & Design Blog</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Art and Design blog for artists and designers. Get the latest news, tips, and inspiration for your art and design journey.">
+  <title>Art.Design Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo">Art. Design</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Art. Design</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <nav class="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <div class="logo">Art.Design</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Design</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+    
+
+    <div class="hero-content">
+      <h1>Art. Design Blog</h1>
+      <p>Everything You Want To Know About Art & Design</p>
+      <div class="search-box">
+        <form action="#">
+          <input type="text" placeholder="Find Your Art..." aria-label="Search Art">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="recent-posts">
+    <h2 class="h11">Recent Arts  Designs</h2>
+    <div class="posts">
+        <div class="post">
+            <img src="img/1.jpg" alt="Art 1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
         </div>
-    </section>
-
-    <section class="recent-posts">
-        <h2>Recent Arts & Designs (Flexbox)</h2>
-        <div class="posts">
-            <div class="post">
-                <img src="./foto/1.jpg" alt="Art 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
-            <div class="post">
-                <img src="./foto/2.jpg" alt="Art 2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
-            <div class="post">
-                <img src="./foto/3.jpg" alt="Art 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
-            <div class="post">
-                <img src="./foto/4.jpg" alt="Art 4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
-            <div class="post">
-                <img src="./foto/5.jpg" alt="Art 5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
-            <div class="post">
-                <img src="./foto/6.jpg" alt="Art 6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
-            </div>
+        <div class="post">
+            <img src="img/2.jpg" alt="Art 2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
         </div>
-    </section>
-
-    <div class="container">
-        <h1>More Designs (CSS Grid)</h1>
-        <p class="subtitle">Explore various design concepts and projects</p>
-        <div class="grid">
-            <div class="card">
-                <img src="./foto/7.jpg" alt="Design 1">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./foto/8.jpg" alt="Design 2">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./foto/9.jpg" alt="Design 3">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./foto/10.jpg" alt="Design 4">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./foto/11.jpg" alt="Design 5">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./foto/12.jpg" alt="Design 6">
-                <div class="card-content">
-                    <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
-                    <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi
-                        ipsum laudantium nihil? Quaerat.</div>
-                    <a class="read-more" href="#">Read more</a>
-                </div>
-            </div>
+        <div class="post">
+            <img src="./img/3.jpg" alt="Art 3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
         </div>
     </div>
+    <div class="posts">
+        <div class="post">
+            <img src="./img/4.jpg" alt="Art 4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
+        </div>
+        
+        <div class="post">
+            <img src="./img/5.jpg" alt="Art 5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
+        </div>
+        
+        <div class="post">
+            <img src="./img/6.jpg" alt="Art ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?</p>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <h1>Recent Arts & Designs</h1>
+    <p class="h16">Recent Arts & Designs on the blog</p>
+    <div class="grid">
+      <div class="card">
+        <img src="./img/7.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/8.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/9.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/10.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/11.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/12.jpg" alt="Design 1">
+        <div class="card-content">
+          <div class="card-title">Lorem ipsum, dolor sit amet consectetur adipiscing</div>
+          <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Omnis libero quasi ipsum laudantium nihil? Quaerat.</div>
+          <a class="read-more" href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Art & Design Blog. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>2025 Art  Design Blog. All rights reserved.</p>
+</footer>
 </body>
-
 </html>
