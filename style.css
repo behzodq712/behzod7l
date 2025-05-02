@@ -1,207 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: #F5F5F5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
 }
 
-nav {
-    background-color: #fffafa;
+header{
+    background-image: url("./Background.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    padding: 93px 166px 0 165px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
 }
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.nav-list svg {
-    width: 30px;
-    height: 30px;
-}
-
-.nav-list svg:hover {
-    color: #3498DB;
-}
-
-.nav-input {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.nav-input input {
-    width: 380px;
-    height: 40px;
-    background-color: #F5F5F5;
-    border: none;
-    outline: none;
-    padding: 0 35px;
-    border-radius: 5px;
-}
-
-.nav-input svg {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    width: 15px;
-    height: 15px;
-    color: #888;
-}
-
-.nav-right a {
+nav a{
+    color: #fff;
+    font-weight: 400;
     text-decoration: none;
-    margin-left: 10px;
 }
-
-.nav-right .gpt {
-    color: #28AAF5;
+.nav_left{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
 }
-
-.nav-right .shahsiy {
-    color: #28AAF5;
-    text-transform: uppercase;
-}
-
-.nav-right .shahsiy:hover {
-    color: #FF0000;
-}
-
-.top-students {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.students-container {
+.nav_right{
+    margin-left: 414px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    gap: 60px;
 }
-
-.student {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.student img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.stars {
-    color: gold;
+.nav_right a{
     font-size: 18px;
 }
-
-.news {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    margin: 30px auto;
-    width: 60%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.nav_right a:hover{
+    font-weight: 700;
+}
+.header_title h1{
+    margin-bottom: 26px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 100px; 
+}
+.header_title p{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 106px;
+    margin-left: 100px; 
+}
+.header_title a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 100px; 
 }
 
-.news ul {
-    list-style: none;
-    padding: 0;
+section.About {
+    padding: 100px 40px;
+   margin: 76px 167px 115px 167px;
+}
+section.About h2 {
+    font-size: 30px;
+    margin: 93px 1202px 76px 165px;
+   margin-left: 1px;
 }
 
-.news ul li {
-    padding: 10px 0;
+.about_litle {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-left: 50px; 
 }
 
-.news ul li a {
-    text-decoration: none;
-    color: #ff3b3b;
-    font-size: 16px;
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-}
-
-/* Responsiveness */
-
-/* For tablets and below */
-@media (max-width: 1024px) {
-    .nav-input input {
-        width: 280px; /* Adjust input width for smaller screens */
-    }
-
-    .students-container {
-        justify-content: space-around; /* Make sure it fits the container */
-    }
-}
-
-/* For mobile screens */
-@media (max-width: 768px) {
-    .nav-input input {
-        width: 200px;
-    }
-
-    .students-container {
-        flex-direction: column; /* Stack student cards vertically on smaller screens */
-        align-items: center;
-    }
-
-    .student {
-        width: 100%; /* Make cards take full width on small screens */
-    }
-
-    .news {
-        width: 90%; /* Reduce width of news section on mobile */
-    }
-
-    footer {
-        padding: 20px 0; /* Adjust padding for footer */
-    }
-}
-
-/* For very small screens (e.g., 480px or below) */
-@media (max-width: 480px) {
-    .nav-input input {
-        width: 160px; /* Further reduce the width of the search input */
-    }
-
-    .nav-right a {
-        font-size: 14px; /* Reduce font size for links in navbar */
-    }
-
-    .top-students h2 {
-        font-size: 20px; /* Adjust heading size */
-    }
-
-    .student {
-        width: 100%; /* Full width for student cards */
-    }
-
-    .news {
-        width: 95%; /* Slightly reduce width */
-    }
-
-    footer {
-        font-size: 14px; /* Smaller font size for footer */
-    }
+.about_litle p {
+    margin-bottom: 20px;
 }
